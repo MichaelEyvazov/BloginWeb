@@ -306,6 +306,18 @@ footer {
     display: none;
 }
 
+.pixelhint {
+    text-decoration: inherit;
+    color: #939292;
+    font-family: lato-bold, serif;
+    letter-spacing: .025rem;
+    transition: all 0.5s;
+}
+
+.pixelhint:hover {
+    color: rgb(28, 148, 28);
+}
+
 @media (max-width:1024px ) {
     h2 {
         padding-top: 10px;
@@ -508,11 +520,11 @@ footer {
     font-weight: bold;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 641px) {
     .blog-modal {
         width: 50vw;
-        height: 60vh;
-        margin: 15% 25%;
+        height: auto;
+        margin: 10% 0 0 25%;
     }
 
     .modal-btn {
