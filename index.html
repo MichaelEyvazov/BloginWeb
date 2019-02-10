@@ -17,7 +17,11 @@
             <a href="\" class="logo align-center">Blogin<span class="green-dot">.</span></a>
             <nav>
                 <ul class="flex clean-list align-center nav-items">
-                    <li><a href="#" class="nav-item active">Journal</a></li>
+                    <div class="main-header flex align-center">
+                        <p href="\" class="logo logo-mobile align-center">Blogin<span class="green-dot">.</span></p>
+                        <button id="mobile-menu-button" class="mobile-menu-button" onclick="toggleMenu()">&times;</button>
+                    </div>
+                    <li><a href="#" class="nav-item">Journal</a></li>
                     <li><a href="#" class="nav-item">About</a></li>
                     <li><a href="#" class="nav-item">Work</a></li>
                     <li><a href="#" class="nav-item">Cantact</a></li>
@@ -26,6 +30,7 @@
             <button id="mobile-menu-button" class="mobile-menu-button" onclick="toggleMenu()">☰</button>
         </div>
     </header>
+
     <main class="inner-container blog-items">
         <div class="blog-item space-beetween">
             <img src="img/001.jpg" class="blog-image" alt="">
