@@ -11,17 +11,53 @@
 </head>
 
 <body onload="init()">
+    <!-- Modal -->
+    <div class="modal">
+        <div class="blog-modal flex">
+            <div class="modal-container">
+                <h2 class="blog-title">
+                    Duis aute irure dolor in henderit in voluptate.
+                </h2>
+                <p>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur
+                </p>
+                <div class="modal-bottom">
+                    <h3>Join us to get access to the latest stories!</h3>
+                    <input type="email" class="email-input" placeholder="example@email.com">
+                    <div class="modal-btn flex space-beetween">
+                        <button class="btn-close" onclick="closeModal()">Submit</button>
+                        <button class="btn-close" onclick="closeModal()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="screen" onclick="toggleMenu()"></div>
     <header class="main-header flex align-center">
         <div class="main-nav inner-container flex space-beetween align-center">
             <a href="\" class="logo align-center">Blogin<span class="green-dot">.</span></a>
             <nav>
                 <ul class="flex clean-list align-center nav-items">
-                    <div class="main-header flex align-center">
+                    <!-- <div class="main-header flex align-center">
                         <p href="\" class="logo logo-mobile align-center">Blogin<span class="green-dot">.</span></p>
                         <button id="mobile-menu-button" class="mobile-menu-button" onclick="toggleMenu()">&times;</button>
-                    </div>
-                    <li><a href="#" class="nav-item">Journal</a></li>
+                    </div> -->
+                    <li class="dropdown">
+                        <a href="#" class="nav-item">Journal</a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <a href="#">October 2016</a>
+                                <a href="#">January 2017</a>
+                                <a href="#">April 2017</a>
+                                <a href="#">July 2017 </a>
+                            </ul>
+                        </div>
+                    </li>
                     <li><a href="#" class="nav-item">About</a></li>
                     <li><a href="#" class="nav-item">Work</a></li>
                     <li><a href="#" class="nav-item">Cantact</a></li>
@@ -46,7 +82,7 @@
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur...
                 </p>
-                <button class="btn">Continue Reading</button>
+                <button class="btn" onclick="toggleModal()">Continue Reading</button>
             </div>
         </div>
         <div class="blog-item space-beetween">
@@ -63,7 +99,7 @@
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur...
                 </p>
-                <button class="btn">Continue Reading</button>
+                <button class="btn" onclick="toggleModal()">Continue Reading</button>
             </div>
         </div>
         <div class="blog-item space-beetween">
@@ -80,14 +116,14 @@
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur...
                 </p>
-                <button class="btn">Continue Reading</button>
+                <button class="btn" onclick="toggleModal()">Continue Reading</button>
             </div>
         </div>
-        <div class="blog-bottom space-beetween">
-            <a class="bottom-button">← Previous</a>
-            <a class="bottom-button">Next →</a>
-        </div>
     </main>
+    <div class="inner-container blog-bottom space-beetween">
+        <a class="bottom-button">← Previous</a>
+        <a class="bottom-button">Next →</a>
+    </div>
     <footer>
         <div class="inner-container flex copyright align-center">
             <a href="\" class="logo logo-footer align-center">Blogin<span class="green-dot">.</span></a>
