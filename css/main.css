@@ -144,6 +144,15 @@ ul {
     display: block;
 }
 
+.dropdown-content a:hover {
+    color: #58c93a;
+    border-bottom: 0 solid #58c93a;
+}
+
+.dropdown-content ul {
+    padding-left: 0;
+}
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -242,6 +251,8 @@ p {
     font-weight: bold;
     transition: .3s
 }
+
+
 
 .bottom-button:hover {
     color: green;
@@ -406,10 +417,6 @@ footer {
     .dropdown-content a {
         border: 5px solid #58c93a;
     }
-    
-    .dropdown-content ul {
-        padding-left: 0;
-    }
 
     .nav-items a:hover {
         border-bottom: 0 solid #58c93a;
@@ -465,11 +472,14 @@ footer {
 }
 
 .email-input {
-    width: 10em;
+    width: 20rem;
+    height: 2em;
     margin: 0.5em auto;
     text-align: center;
-    border:3px solid #b2acac;
     border-radius: 5px;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: .0625rem solid #757575;
 }
 
 .btn-close {
@@ -488,6 +498,14 @@ footer {
     color: green;
     border-color:  green;
     /* background-color: green; */
+}
+
+.btn-close-modal {
+    cursor: pointer;
+    color: #aaa;
+    float: right;
+    font-size: 1.75rem;
+    font-weight: bold;
 }
 
 @media (min-width: 640px) {
