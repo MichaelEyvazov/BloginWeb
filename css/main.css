@@ -41,6 +41,7 @@ a {
     background-color: transparent;
     color: white;
     text-decoration: none;
+    transition: all 0.5s;
 }
 
 .nav-items a:hover {
@@ -275,10 +276,14 @@ footer {
         padding-top: 10px;
     }
 
+    .inner-container {
+        padding: 0 0;
+    }
+
     .mobile-menu-button {
         display: block;
         right: 3em;
-        position: absolute;
+        position: fixed;
     }
     
     .nav-items {
