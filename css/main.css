@@ -283,7 +283,7 @@ footer {
     .mobile-menu-button {
         display: block;
         right: 3em;
-        position: fixed;
+        position: absolute;
     }
     
     .nav-items {
